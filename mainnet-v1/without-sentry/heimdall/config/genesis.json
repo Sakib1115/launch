@@ -1,0 +1,264 @@
+{
+  "genesis_time": "2023-12-22T11:24:25.089831801Z",
+  "chain_id": "heimdall-1370",
+  "consensus_params": {
+    "block": {
+      "max_bytes": "22020096",
+      "max_gas": "-1",
+      "time_iota_ms": "1000"
+    },
+    "evidence": {
+      "max_age": "100000"
+    },
+    "validator": {
+      "pub_key_types": [
+        "secp256k1"
+      ]
+    }
+  },
+  "app_hash": "",
+  "app_state": {
+    "auth": {
+      "params": {
+        "max_memo_characters": "256",
+        "tx_sig_limit": "7",
+        "tx_size_cost_per_byte": "10",
+        "sig_verify_cost_ed25519": "590",
+        "sig_verify_cost_secp256k1": "1000",
+        "max_tx_gas": "1000000",
+        "tx_fees": "1000000000000000"
+      },
+      "accounts": [
+        {
+          "address": "0xAD2841865D74C66C221438A974F27a009331e63F",
+          "coins": [
+            {
+              "denom": "rama",
+              "amount": "1000000000000000000000"
+            }
+          ],
+          "sequence_number": "0",
+          "account_number": "0",
+          "module_name": "",
+          "module_permissions": null
+        },
+        {
+          "address": "0x89F44d3455f7EF111E34d9bdb104F9489E6dCD61",
+          "coins": [
+            {
+              "denom": "rama",
+              "amount": "1000000000000000000000"
+            }
+          ],
+          "sequence_number": "0",
+          "account_number": "0",
+          "module_name": "",
+          "module_permissions": null
+        }
+      ]
+    },
+    "bank": {
+      "send_enabled": true
+    },
+    "bor": {
+      "params": {
+        "sprint_duration": "64",
+        "span_duration": "6400",
+        "producer_count": "4"
+      },
+      "spans": [
+        {
+          "span_id": "0",
+          "start_block": "0",
+          "end_block": "255",
+          "validator_set": {
+            "validators": [
+              {
+                "ID": "1",
+                "startEpoch": "0",
+                "endEpoch": "0",
+                "nonce": "1",
+                "power": "10000",
+                "pubKey": "0x0401d2518f23e1ef3caf978e18126c97505bfb087d4746bafa1943143fdb3914f68944e1095a100afee826af50fa8e84c472e07842d7ca4d72bee709018cc8bdd3",
+                "signer": "0xAD2841865D74C66C221438A974F27a009331e63F",
+                "last_updated": "",
+                "jailed": false,
+                "accum": "0"
+              }
+            ],
+            "proposer": {
+              "ID": "1",
+              "startEpoch": "0",
+              "endEpoch": "0",
+              "nonce": "1",
+              "power": "10000",
+              "pubKey": "0x0401d2518f23e1ef3caf978e18126c97505bfb087d4746bafa1943143fdb3914f68944e1095a100afee826af50fa8e84c472e07842d7ca4d72bee709018cc8bdd3",
+              "signer": "0xAD2841865D74C66C221438A974F27a009331e63F",
+              "last_updated": "",
+              "jailed": false,
+              "accum": "0"
+            }
+          },
+          "selected_producers": [
+            {
+              "ID": "1",
+              "startEpoch": "0",
+              "endEpoch": "0",
+              "nonce": "1",
+              "power": "10000",
+              "pubKey": "0x0401d2518f23e1ef3caf978e18126c97505bfb087d4746bafa1943143fdb3914f68944e1095a100afee826af50fa8e84c472e07842d7ca4d72bee709018cc8bdd3",
+              "signer": "0xAD2841865D74C66C221438A974F27a009331e63F",
+              "last_updated": "",
+              "jailed": false,
+              "accum": "0"
+            }
+          ],
+          "bor_chain_id": "1370"
+        }
+      ]
+    },
+    "chainmanager": {
+      "params": {
+        "mainchain_tx_confirmations": "12",
+        "ramesttachain_tx_confirmations": "20",
+        "chain_params": {
+          "bor_chain_id": "1370",
+          "rama_token_address": "0x55a5CC06801bBa4C030568f1A7ee1c753FDcbe36",
+          "staking_manager_address": "0xc032E6C4D196CBf4CceddbA1d18661F7DD57f659",
+          "slash_manager_address": "0xae032F1be5d139a679d975dB379E27aF2107D7D7",
+          "root_chain_address": "0x32BC23e5FFf7D567313dB4F41A5125Ad9D9Bca63",
+          "staking_info_address": "0x06FB27902B00a4CCF3850783dAB763364BF8654A",
+          "state_sender_address": "0xE0C9051E655380D1d880b9B0f4b500cEbD09278f",
+          "state_receiver_address": "0x0000000000000000000000000000000000001001",
+          "validator_set_address": "0x0000000000000000000000000000000000001000"
+        }
+      }
+    },
+    "checkpoint": {
+      "params": {
+        "checkpoint_buffer_time": "1000000000000",
+        "avg_checkpoint_length": "256",
+        "max_checkpoint_length": "1024",
+        "child_chain_block_interval": "10000"
+      },
+      "buffered_checkpoint": null,
+      "last_no_ack": "0",
+      "ack_count": "0",
+      "checkpoints": null
+    },
+    "clerk": {
+      "event_records": [],
+      "record_sequences": null
+    },
+    "gov": {
+      "starting_proposal_id": "1",
+      "deposits": null,
+      "votes": null,
+      "proposals": null,
+      "deposit_params": {
+        "min_deposit": [
+          {
+            "denom": "rama",
+            "amount": "10000000000000000000"
+          }
+        ],
+        "max_deposit_period": "172800000000000"
+      },
+      "voting_params": {
+        "voting_period": "172800000000000"
+      },
+      "tally_params": {
+        "quorum": "0.334000000000000000",
+        "threshold": "0.500000000000000000",
+        "veto": "0.334000000000000000"
+      }
+    },
+    "params": null,
+    "sidechannel": {
+      "past_commits": []
+    },
+    "slashing": {
+      "params": {
+        "signed_blocks_window": "100",
+        "min_signed_per_window": "0.500000000000000000",
+        "downtime_jail_duration": "600000000000",
+        "slash_fraction_double_sign": "0.050000000000000000",
+        "slash_fraction_downtime": "0.010000000000000000",
+        "slash_fraction_limit": "0.333333333333333333",
+        "jail_fraction_limit": "0.333333333333333333",
+        "max_evidence_age": "120000000000",
+        "enable_slashing": false
+      },
+      "signing_infos": {
+        "1": {
+          "valID": "1",
+          "startHeight": "0",
+          "indexOffset": "0"
+        }
+      },
+      "missed_blocks": {},
+      "buffer_val_slash_info": null,
+      "tick_val_slash_info": null,
+      "tick_count": "0"
+    },
+    "staking": {
+      "validators": [
+        {
+          "ID": "1",
+          "startEpoch": "0",
+          "endEpoch": "0",
+          "nonce": "1",
+          "power": "10000",
+          "pubKey": "0x0401d2518f23e1ef3caf978e18126c97505bfb087d4746bafa1943143fdb3914f68944e1095a100afee826af50fa8e84c472e07842d7ca4d72bee709018cc8bdd3",
+          "signer": "0xAD2841865D74C66C221438A974F27a009331e63F",
+          "last_updated": "",
+          "jailed": false,
+          "accum": "0"
+        }
+      ],
+      "current_val_set": {
+        "validators": [
+          {
+            "ID": "1",
+            "startEpoch": "0",
+            "endEpoch": "0",
+            "nonce": "1",
+            "power": "10000",
+            "pubKey": "0x0401d2518f23e1ef3caf978e18126c97505bfb087d4746bafa1943143fdb3914f68944e1095a100afee826af50fa8e84c472e07842d7ca4d72bee709018cc8bdd3",
+            "signer": "0xAD2841865D74C66C221438A974F27a009331e63F",
+            "last_updated": "",
+            "jailed": false,
+            "accum": "0"
+          }
+        ],
+        "proposer": {
+          "ID": "1",
+          "startEpoch": "0",
+          "endEpoch": "0",
+          "nonce": "1",
+          "power": "10000",
+          "pubKey": "0x0401d2518f23e1ef3caf978e18126c97505bfb087d4746bafa1943143fdb3914f68944e1095a100afee826af50fa8e84c472e07842d7ca4d72bee709018cc8bdd3",
+          "signer": "0xAD2841865D74C66C221438A974F27a009331e63F",
+          "last_updated": "",
+          "jailed": false,
+          "accum": "0"
+        }
+      },
+      "staking_sequences": null
+    },
+    "supply": {
+      "supply": {
+        "total": []
+      }
+    },
+    "topup": {
+      "tx_sequences": null,
+      "dividend_accounts": [
+        {
+          "user": "0xad2841865d74c66c221438a974f27a009331e63f",
+          "feeAmount": "0"
+        }
+      ]
+    }
+  }
+}
